@@ -1,0 +1,32 @@
+[
+    {
+        "guid": "b4056a14-1727-4006-a5d4-3b28391b96f4",
+        "run_n": 0,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+    },
+    {
+        "guid": "b4056a14-1727-4006-a5d4-3b28391b96f4",
+        "run_n": 1,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+    },
+    {
+        "guid": "b4056a14-1727-4006-a5d4-3b28391b96f4",
+        "run_n": 2,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+    }
+]

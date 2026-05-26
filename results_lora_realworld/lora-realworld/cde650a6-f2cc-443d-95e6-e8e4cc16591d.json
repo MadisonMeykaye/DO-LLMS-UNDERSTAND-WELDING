@@ -1,0 +1,32 @@
+[
+    {
+        "guid": "cde650a6-f2cc-443d-95e6-e8e4cc16591d",
+        "run_n": 0,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "{\"acceptable\": false}",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "{\"acceptable\": false}",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "{\"acceptable\": false}"
+    },
+    {
+        "guid": "cde650a6-f2cc-443d-95e6-e8e4cc16591d",
+        "run_n": 1,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "{\"acceptable\": false}",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "{\"acceptable\": false}",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "{\"acceptable\": false}"
+    },
+    {
+        "guid": "cde650a6-f2cc-443d-95e6-e8e4cc16591d",
+        "run_n": 2,
+        "AcceptableRVMarine": false,
+        "NarrativeRVMarine": "{\"acceptable\": false}",
+        "AcceptableAeronautical": false,
+        "NarrativeAeronautical": "{\"acceptable\": false}",
+        "AcceptableFarming": false,
+        "NarrativeFarming": "{\"acceptable\": false}"
+    }
+]

@@ -1,0 +1,351 @@
+experiment,dataset,row,metric,value
+zero-shot-direct-all,private,AcceptableRVMarine,precision,0.5945945945945946
+zero-shot-direct-all,private,AcceptableRVMarine,recall,0.5116279069767442
+zero-shot-direct-all,private,AcceptableRVMarine,f1-score,0.55
+zero-shot-direct-all,private,AcceptableRVMarine,support,43.0
+zero-shot-direct-all,private,AcceptableRVMarine,rocauc,0.6457960644007155
+zero-shot-direct-all,private,AcceptableAeronautical,precision,0.3333333333333333
+zero-shot-direct-all,private,AcceptableAeronautical,recall,0.3333333333333333
+zero-shot-direct-all,private,AcceptableAeronautical,f1-score,0.3333333333333333
+zero-shot-direct-all,private,AcceptableAeronautical,support,12.0
+zero-shot-direct-all,private,AcceptableAeronautical,rocauc,0.5943775100401606
+zero-shot-direct-all,private,AcceptableFarming,precision,0.2857142857142857
+zero-shot-direct-all,private,AcceptableFarming,recall,0.7692307692307693
+zero-shot-direct-all,private,AcceptableFarming,f1-score,0.4166666666666667
+zero-shot-direct-all,private,AcceptableFarming,support,26.0
+zero-shot-direct-all,private,AcceptableFarming,rocauc,0.5504459308807135
+zero-shot-direct-all,private,micro avg,precision,0.3865546218487395
+zero-shot-direct-all,private,micro avg,recall,0.5679012345679012
+zero-shot-direct-all,private,micro avg,f1-score,0.46
+zero-shot-direct-all,private,micro avg,support,81.0
+zero-shot-direct-all,private,micro avg,rocauc,0.6244553376906317
+zero-shot-direct-all,private,macro avg,precision,0.4045474045474046
+zero-shot-direct-all,private,macro avg,recall,0.5380640031802822
+zero-shot-direct-all,private,macro avg,f1-score,0.4333333333333333
+zero-shot-direct-all,private,macro avg,support,81.0
+zero-shot-direct-all,private,macro avg,rocauc,0.5968731684405298
+zero-shot-direct-all,private,weighted avg,precision,0.4567424567424567
+zero-shot-direct-all,private,weighted avg,recall,0.5679012345679012
+zero-shot-direct-all,private,weighted avg,f1-score,0.4751028806584362
+zero-shot-direct-all,private,weighted avg,support,81.0
+zero-shot-direct-all,private,weighted avg,rocauc,0.6075722850939659
+zero-shot-direct-all,private,samples avg,precision,0.2789473684210526
+zero-shot-direct-all,private,samples avg,recall,0.3228070175438596
+zero-shot-direct-all,private,samples avg,f1-score,0.2736842105263158
+zero-shot-direct-all,private,samples avg,support,81.0
+zero-shot-direct-all,private,samples avg,rocauc,
+zero-shot-direct-all,web,AcceptableRVMarine,precision,0.8181818181818182
+zero-shot-direct-all,web,AcceptableRVMarine,recall,0.5142857142857142
+zero-shot-direct-all,web,AcceptableRVMarine,f1-score,0.631578947368421
+zero-shot-direct-all,web,AcceptableRVMarine,support,35.0
+zero-shot-direct-all,web,AcceptableRVMarine,rocauc,0.7341614906832299
+zero-shot-direct-all,web,AcceptableAeronautical,precision,1.0
+zero-shot-direct-all,web,AcceptableAeronautical,recall,0.375
+zero-shot-direct-all,web,AcceptableAeronautical,f1-score,0.5454545454545454
+zero-shot-direct-all,web,AcceptableAeronautical,support,16.0
+zero-shot-direct-all,web,AcceptableAeronautical,rocauc,0.6875
+zero-shot-direct-all,web,AcceptableFarming,precision,0.8235294117647058
+zero-shot-direct-all,web,AcceptableFarming,recall,0.6829268292682927
+zero-shot-direct-all,web,AcceptableFarming,f1-score,0.7466666666666667
+zero-shot-direct-all,web,AcceptableFarming,support,41.0
+zero-shot-direct-all,web,AcceptableFarming,rocauc,0.6843615494978479
+zero-shot-direct-all,web,micro avg,precision,0.8387096774193549
+zero-shot-direct-all,web,micro avg,recall,0.5652173913043478
+zero-shot-direct-all,web,micro avg,f1-score,0.6753246753246753
+zero-shot-direct-all,web,micro avg,support,92.0
+zero-shot-direct-all,web,micro avg,rocauc,0.7546394485683987
+zero-shot-direct-all,web,macro avg,precision,0.8805704099821746
+zero-shot-direct-all,web,macro avg,recall,0.5240708478513357
+zero-shot-direct-all,web,macro avg,f1-score,0.6412333864965444
+zero-shot-direct-all,web,macro avg,support,92.0
+zero-shot-direct-all,web,macro avg,rocauc,0.7020076800603592
+zero-shot-direct-all,web,weighted avg,precision,0.8521855382469193
+zero-shot-direct-all,web,weighted avg,recall,0.5652173913043478
+zero-shot-direct-all,web,weighted avg,f1-score,0.6678898828097912
+zero-shot-direct-all,web,weighted avg,support,92.0
+zero-shot-direct-all,web,weighted avg,rocauc,0.7038529967752697
+zero-shot-direct-all,web,samples avg,precision,0.4741379310344828
+zero-shot-direct-all,web,samples avg,recall,0.3591954022988506
+zero-shot-direct-all,web,samples avg,f1-score,0.3954022988505748
+zero-shot-direct-all,web,samples avg,support,92.0
+zero-shot-direct-all,web,samples avg,rocauc,
+lora-realworld-all,private,AcceptableRVMarine,precision,0.0
+lora-realworld-all,private,AcceptableRVMarine,recall,0.0
+lora-realworld-all,private,AcceptableRVMarine,f1-score,0.0
+lora-realworld-all,private,AcceptableRVMarine,support,43.0
+lora-realworld-all,private,AcceptableRVMarine,rocauc,0.5
+lora-realworld-all,private,AcceptableAeronautical,precision,0.0
+lora-realworld-all,private,AcceptableAeronautical,recall,0.0
+lora-realworld-all,private,AcceptableAeronautical,f1-score,0.0
+lora-realworld-all,private,AcceptableAeronautical,support,12.0
+lora-realworld-all,private,AcceptableAeronautical,rocauc,0.5
+lora-realworld-all,private,AcceptableFarming,precision,0.0
+lora-realworld-all,private,AcceptableFarming,recall,0.0
+lora-realworld-all,private,AcceptableFarming,f1-score,0.0
+lora-realworld-all,private,AcceptableFarming,support,26.0
+lora-realworld-all,private,AcceptableFarming,rocauc,0.5
+lora-realworld-all,private,micro avg,precision,0.0
+lora-realworld-all,private,micro avg,recall,0.0
+lora-realworld-all,private,micro avg,f1-score,0.0
+lora-realworld-all,private,micro avg,support,81.0
+lora-realworld-all,private,micro avg,rocauc,0.5
+lora-realworld-all,private,macro avg,precision,0.0
+lora-realworld-all,private,macro avg,recall,0.0
+lora-realworld-all,private,macro avg,f1-score,0.0
+lora-realworld-all,private,macro avg,support,81.0
+lora-realworld-all,private,macro avg,rocauc,0.5
+lora-realworld-all,private,weighted avg,precision,0.0
+lora-realworld-all,private,weighted avg,recall,0.0
+lora-realworld-all,private,weighted avg,f1-score,0.0
+lora-realworld-all,private,weighted avg,support,81.0
+lora-realworld-all,private,weighted avg,rocauc,0.5
+lora-realworld-all,private,samples avg,precision,0.0
+lora-realworld-all,private,samples avg,recall,0.0
+lora-realworld-all,private,samples avg,f1-score,0.0
+lora-realworld-all,private,samples avg,support,81.0
+lora-realworld-all,private,samples avg,rocauc,
+lora-realworld-all,web,AcceptableRVMarine,precision,0.0
+lora-realworld-all,web,AcceptableRVMarine,recall,0.0
+lora-realworld-all,web,AcceptableRVMarine,f1-score,0.0
+lora-realworld-all,web,AcceptableRVMarine,support,35.0
+lora-realworld-all,web,AcceptableRVMarine,rocauc,0.5
+lora-realworld-all,web,AcceptableAeronautical,precision,0.0
+lora-realworld-all,web,AcceptableAeronautical,recall,0.0
+lora-realworld-all,web,AcceptableAeronautical,f1-score,0.0
+lora-realworld-all,web,AcceptableAeronautical,support,16.0
+lora-realworld-all,web,AcceptableAeronautical,rocauc,0.5
+lora-realworld-all,web,AcceptableFarming,precision,0.0
+lora-realworld-all,web,AcceptableFarming,recall,0.0
+lora-realworld-all,web,AcceptableFarming,f1-score,0.0
+lora-realworld-all,web,AcceptableFarming,support,41.0
+lora-realworld-all,web,AcceptableFarming,rocauc,0.5
+lora-realworld-all,web,micro avg,precision,0.0
+lora-realworld-all,web,micro avg,recall,0.0
+lora-realworld-all,web,micro avg,f1-score,0.0
+lora-realworld-all,web,micro avg,support,92.0
+lora-realworld-all,web,micro avg,rocauc,0.5
+lora-realworld-all,web,macro avg,precision,0.0
+lora-realworld-all,web,macro avg,recall,0.0
+lora-realworld-all,web,macro avg,f1-score,0.0
+lora-realworld-all,web,macro avg,support,92.0
+lora-realworld-all,web,macro avg,rocauc,0.5
+lora-realworld-all,web,weighted avg,precision,0.0
+lora-realworld-all,web,weighted avg,recall,0.0
+lora-realworld-all,web,weighted avg,f1-score,0.0
+lora-realworld-all,web,weighted avg,support,92.0
+lora-realworld-all,web,weighted avg,rocauc,0.5
+lora-realworld-all,web,samples avg,precision,0.0
+lora-realworld-all,web,samples avg,recall,0.0
+lora-realworld-all,web,samples avg,f1-score,0.0
+lora-realworld-all,web,samples avg,support,92.0
+lora-realworld-all,web,samples avg,rocauc,
+zero-shot-direct-train,private,AcceptableRVMarine,precision,0.5769230769230769
+zero-shot-direct-train,private,AcceptableRVMarine,recall,0.4545454545454545
+zero-shot-direct-train,private,AcceptableRVMarine,f1-score,0.5084745762711864
+zero-shot-direct-train,private,AcceptableRVMarine,support,33.0
+zero-shot-direct-train,private,AcceptableRVMarine,rocauc,0.6338971106412967
+zero-shot-direct-train,private,AcceptableAeronautical,precision,0.3333333333333333
+zero-shot-direct-train,private,AcceptableAeronautical,recall,0.3333333333333333
+zero-shot-direct-train,private,AcceptableAeronautical,f1-score,0.3333333333333333
+zero-shot-direct-train,private,AcceptableAeronautical,support,9.0
+zero-shot-direct-train,private,AcceptableAeronautical,rocauc,0.6044776119402986
+zero-shot-direct-train,private,AcceptableFarming,precision,0.3518518518518519
+zero-shot-direct-train,private,AcceptableFarming,recall,0.76
+zero-shot-direct-train,private,AcceptableFarming,f1-score,0.4810126582278481
+zero-shot-direct-train,private,AcceptableFarming,support,25.0
+zero-shot-direct-train,private,AcceptableFarming,rocauc,0.5733333333333334
+zero-shot-direct-train,private,micro avg,precision,0.4157303370786517
+zero-shot-direct-train,private,micro avg,recall,0.5522388059701493
+zero-shot-direct-train,private,micro avg,f1-score,0.4743589743589743
+zero-shot-direct-train,private,micro avg,support,67.0
+zero-shot-direct-train,private,micro avg,rocauc,0.6391489756188005
+zero-shot-direct-train,private,macro avg,precision,0.4207027540360873
+zero-shot-direct-train,private,macro avg,recall,0.515959595959596
+zero-shot-direct-train,private,macro avg,f1-score,0.440940189277456
+zero-shot-direct-train,private,macro avg,support,67.0
+zero-shot-direct-train,private,macro avg,rocauc,0.6039026853049762
+zero-shot-direct-train,private,weighted avg,precision,0.4602202661904154
+zero-shot-direct-train,private,weighted avg,recall,0.5522388059701493
+zero-shot-direct-train,private,weighted avg,f1-score,0.4747011563081396
+zero-shot-direct-train,private,weighted avg,support,67.0
+zero-shot-direct-train,private,weighted avg,rocauc,0.6073468133128181
+zero-shot-direct-train,private,samples avg,precision,0.2960526315789473
+zero-shot-direct-train,private,samples avg,recall,0.3157894736842105
+zero-shot-direct-train,private,samples avg,f1-score,0.2793859649122807
+zero-shot-direct-train,private,samples avg,support,67.0
+zero-shot-direct-train,private,samples avg,rocauc,
+lora-realworld-train,private,AcceptableRVMarine,precision,0.0
+lora-realworld-train,private,AcceptableRVMarine,recall,0.0
+lora-realworld-train,private,AcceptableRVMarine,f1-score,0.0
+lora-realworld-train,private,AcceptableRVMarine,support,33.0
+lora-realworld-train,private,AcceptableRVMarine,rocauc,0.5
+lora-realworld-train,private,AcceptableAeronautical,precision,0.0
+lora-realworld-train,private,AcceptableAeronautical,recall,0.0
+lora-realworld-train,private,AcceptableAeronautical,f1-score,0.0
+lora-realworld-train,private,AcceptableAeronautical,support,9.0
+lora-realworld-train,private,AcceptableAeronautical,rocauc,0.5
+lora-realworld-train,private,AcceptableFarming,precision,0.0
+lora-realworld-train,private,AcceptableFarming,recall,0.0
+lora-realworld-train,private,AcceptableFarming,f1-score,0.0
+lora-realworld-train,private,AcceptableFarming,support,25.0
+lora-realworld-train,private,AcceptableFarming,rocauc,0.5
+lora-realworld-train,private,micro avg,precision,0.0
+lora-realworld-train,private,micro avg,recall,0.0
+lora-realworld-train,private,micro avg,f1-score,0.0
+lora-realworld-train,private,micro avg,support,67.0
+lora-realworld-train,private,micro avg,rocauc,0.5
+lora-realworld-train,private,macro avg,precision,0.0
+lora-realworld-train,private,macro avg,recall,0.0
+lora-realworld-train,private,macro avg,f1-score,0.0
+lora-realworld-train,private,macro avg,support,67.0
+lora-realworld-train,private,macro avg,rocauc,0.5
+lora-realworld-train,private,weighted avg,precision,0.0
+lora-realworld-train,private,weighted avg,recall,0.0
+lora-realworld-train,private,weighted avg,f1-score,0.0
+lora-realworld-train,private,weighted avg,support,67.0
+lora-realworld-train,private,weighted avg,rocauc,0.5
+lora-realworld-train,private,samples avg,precision,0.0
+lora-realworld-train,private,samples avg,recall,0.0
+lora-realworld-train,private,samples avg,f1-score,0.0
+lora-realworld-train,private,samples avg,support,67.0
+lora-realworld-train,private,samples avg,rocauc,
+zero-shot-direct-dev,private,AcceptableRVMarine,precision,0.6363636363636364
+zero-shot-direct-dev,private,AcceptableRVMarine,recall,0.7
+zero-shot-direct-dev,private,AcceptableRVMarine,f1-score,0.6666666666666666
+zero-shot-direct-dev,private,AcceptableRVMarine,support,10.0
+zero-shot-direct-dev,private,AcceptableRVMarine,rocauc,0.6944444444444444
+zero-shot-direct-dev,private,AcceptableAeronautical,precision,0.3333333333333333
+zero-shot-direct-dev,private,AcceptableAeronautical,recall,0.3333333333333333
+zero-shot-direct-dev,private,AcceptableAeronautical,f1-score,0.3333333333333333
+zero-shot-direct-dev,private,AcceptableAeronautical,support,3.0
+zero-shot-direct-dev,private,AcceptableAeronautical,rocauc,0.5520833333333334
+zero-shot-direct-dev,private,AcceptableFarming,precision,0.0625
+zero-shot-direct-dev,private,AcceptableFarming,recall,1.0
+zero-shot-direct-dev,private,AcceptableFarming,f1-score,0.1176470588235294
+zero-shot-direct-dev,private,AcceptableFarming,support,1.0
+zero-shot-direct-dev,private,AcceptableFarming,rocauc,0.5833333333333333
+zero-shot-direct-dev,private,micro avg,precision,0.3
+zero-shot-direct-dev,private,micro avg,recall,0.6428571428571429
+zero-shot-direct-dev,private,micro avg,f1-score,0.4090909090909091
+zero-shot-direct-dev,private,micro avg,support,14.0
+zero-shot-direct-dev,private,micro avg,rocauc,0.5705980066445183
+zero-shot-direct-dev,private,macro avg,precision,0.3440656565656566
+zero-shot-direct-dev,private,macro avg,recall,0.6777777777777777
+zero-shot-direct-dev,private,macro avg,f1-score,0.3725490196078431
+zero-shot-direct-dev,private,macro avg,support,14.0
+zero-shot-direct-dev,private,macro avg,rocauc,0.6099537037037036
+zero-shot-direct-dev,private,weighted avg,precision,0.5304383116883117
+zero-shot-direct-dev,private,weighted avg,recall,0.6428571428571429
+zero-shot-direct-dev,private,weighted avg,f1-score,0.5560224089635853
+zero-shot-direct-dev,private,weighted avg,support,14.0
+zero-shot-direct-dev,private,weighted avg,rocauc,0.6560019841269842
+zero-shot-direct-dev,private,samples avg,precision,0.2105263157894737
+zero-shot-direct-dev,private,samples avg,recall,0.3508771929824561
+zero-shot-direct-dev,private,samples avg,f1-score,0.2508771929824561
+zero-shot-direct-dev,private,samples avg,support,14.0
+zero-shot-direct-dev,private,samples avg,rocauc,
+lora-realworld-dev,private,AcceptableRVMarine,precision,0.0
+lora-realworld-dev,private,AcceptableRVMarine,recall,0.0
+lora-realworld-dev,private,AcceptableRVMarine,f1-score,0.0
+lora-realworld-dev,private,AcceptableRVMarine,support,10.0
+lora-realworld-dev,private,AcceptableRVMarine,rocauc,0.5
+lora-realworld-dev,private,AcceptableAeronautical,precision,0.0
+lora-realworld-dev,private,AcceptableAeronautical,recall,0.0
+lora-realworld-dev,private,AcceptableAeronautical,f1-score,0.0
+lora-realworld-dev,private,AcceptableAeronautical,support,3.0
+lora-realworld-dev,private,AcceptableAeronautical,rocauc,0.5
+lora-realworld-dev,private,AcceptableFarming,precision,0.0
+lora-realworld-dev,private,AcceptableFarming,recall,0.0
+lora-realworld-dev,private,AcceptableFarming,f1-score,0.0
+lora-realworld-dev,private,AcceptableFarming,support,1.0
+lora-realworld-dev,private,AcceptableFarming,rocauc,0.5
+lora-realworld-dev,private,micro avg,precision,0.0
+lora-realworld-dev,private,micro avg,recall,0.0
+lora-realworld-dev,private,micro avg,f1-score,0.0
+lora-realworld-dev,private,micro avg,support,14.0
+lora-realworld-dev,private,micro avg,rocauc,0.5
+lora-realworld-dev,private,macro avg,precision,0.0
+lora-realworld-dev,private,macro avg,recall,0.0
+lora-realworld-dev,private,macro avg,f1-score,0.0
+lora-realworld-dev,private,macro avg,support,14.0
+lora-realworld-dev,private,macro avg,rocauc,0.5
+lora-realworld-dev,private,weighted avg,precision,0.0
+lora-realworld-dev,private,weighted avg,recall,0.0
+lora-realworld-dev,private,weighted avg,f1-score,0.0
+lora-realworld-dev,private,weighted avg,support,14.0
+lora-realworld-dev,private,weighted avg,rocauc,0.5
+lora-realworld-dev,private,samples avg,precision,0.0
+lora-realworld-dev,private,samples avg,recall,0.0
+lora-realworld-dev,private,samples avg,f1-score,0.0
+lora-realworld-dev,private,samples avg,support,14.0
+lora-realworld-dev,private,samples avg,rocauc,
+zero-shot-direct-web,web,AcceptableRVMarine,precision,0.8181818181818182
+zero-shot-direct-web,web,AcceptableRVMarine,recall,0.5142857142857142
+zero-shot-direct-web,web,AcceptableRVMarine,f1-score,0.631578947368421
+zero-shot-direct-web,web,AcceptableRVMarine,support,35.0
+zero-shot-direct-web,web,AcceptableRVMarine,rocauc,0.7341614906832299
+zero-shot-direct-web,web,AcceptableAeronautical,precision,1.0
+zero-shot-direct-web,web,AcceptableAeronautical,recall,0.375
+zero-shot-direct-web,web,AcceptableAeronautical,f1-score,0.5454545454545454
+zero-shot-direct-web,web,AcceptableAeronautical,support,16.0
+zero-shot-direct-web,web,AcceptableAeronautical,rocauc,0.6875
+zero-shot-direct-web,web,AcceptableFarming,precision,0.8235294117647058
+zero-shot-direct-web,web,AcceptableFarming,recall,0.6829268292682927
+zero-shot-direct-web,web,AcceptableFarming,f1-score,0.7466666666666667
+zero-shot-direct-web,web,AcceptableFarming,support,41.0
+zero-shot-direct-web,web,AcceptableFarming,rocauc,0.6843615494978479
+zero-shot-direct-web,web,micro avg,precision,0.8387096774193549
+zero-shot-direct-web,web,micro avg,recall,0.5652173913043478
+zero-shot-direct-web,web,micro avg,f1-score,0.6753246753246753
+zero-shot-direct-web,web,micro avg,support,92.0
+zero-shot-direct-web,web,micro avg,rocauc,0.7546394485683987
+zero-shot-direct-web,web,macro avg,precision,0.8805704099821746
+zero-shot-direct-web,web,macro avg,recall,0.5240708478513357
+zero-shot-direct-web,web,macro avg,f1-score,0.6412333864965444
+zero-shot-direct-web,web,macro avg,support,92.0
+zero-shot-direct-web,web,macro avg,rocauc,0.7020076800603592
+zero-shot-direct-web,web,weighted avg,precision,0.8521855382469193
+zero-shot-direct-web,web,weighted avg,recall,0.5652173913043478
+zero-shot-direct-web,web,weighted avg,f1-score,0.6678898828097912
+zero-shot-direct-web,web,weighted avg,support,92.0
+zero-shot-direct-web,web,weighted avg,rocauc,0.7038529967752697
+zero-shot-direct-web,web,samples avg,precision,0.4741379310344828
+zero-shot-direct-web,web,samples avg,recall,0.3591954022988506
+zero-shot-direct-web,web,samples avg,f1-score,0.3954022988505748
+zero-shot-direct-web,web,samples avg,support,92.0
+zero-shot-direct-web,web,samples avg,rocauc,
+lora-realworld-web,web,AcceptableRVMarine,precision,0.0
+lora-realworld-web,web,AcceptableRVMarine,recall,0.0
+lora-realworld-web,web,AcceptableRVMarine,f1-score,0.0
+lora-realworld-web,web,AcceptableRVMarine,support,35.0
+lora-realworld-web,web,AcceptableRVMarine,rocauc,0.5
+lora-realworld-web,web,AcceptableAeronautical,precision,0.0
+lora-realworld-web,web,AcceptableAeronautical,recall,0.0
+lora-realworld-web,web,AcceptableAeronautical,f1-score,0.0
+lora-realworld-web,web,AcceptableAeronautical,support,16.0
+lora-realworld-web,web,AcceptableAeronautical,rocauc,0.5
+lora-realworld-web,web,AcceptableFarming,precision,0.0
+lora-realworld-web,web,AcceptableFarming,recall,0.0
+lora-realworld-web,web,AcceptableFarming,f1-score,0.0
+lora-realworld-web,web,AcceptableFarming,support,41.0
+lora-realworld-web,web,AcceptableFarming,rocauc,0.5
+lora-realworld-web,web,micro avg,precision,0.0
+lora-realworld-web,web,micro avg,recall,0.0
+lora-realworld-web,web,micro avg,f1-score,0.0
+lora-realworld-web,web,micro avg,support,92.0
+lora-realworld-web,web,micro avg,rocauc,0.5
+lora-realworld-web,web,macro avg,precision,0.0
+lora-realworld-web,web,macro avg,recall,0.0
+lora-realworld-web,web,macro avg,f1-score,0.0
+lora-realworld-web,web,macro avg,support,92.0
+lora-realworld-web,web,macro avg,rocauc,0.5
+lora-realworld-web,web,weighted avg,precision,0.0
+lora-realworld-web,web,weighted avg,recall,0.0
+lora-realworld-web,web,weighted avg,f1-score,0.0
+lora-realworld-web,web,weighted avg,support,92.0
+lora-realworld-web,web,weighted avg,rocauc,0.5
+lora-realworld-web,web,samples avg,precision,0.0
+lora-realworld-web,web,samples avg,recall,0.0
+lora-realworld-web,web,samples avg,f1-score,0.0
+lora-realworld-web,web,samples avg,support,92.0
+lora-realworld-web,web,samples avg,rocauc,

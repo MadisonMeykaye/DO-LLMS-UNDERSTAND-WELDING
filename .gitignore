@@ -1,0 +1,24 @@
+# 不上传的目录
+.devcontainer/
+llava-env/
+results/
+results-private/
+results.gpt/
+results_clean_noprompt/
+.vscode/
+vim_devenv/
+
+# 不上传的敏感文件
+secrets.jsonc
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Jupyter 检查点
+.ipynb_checkpoints/
