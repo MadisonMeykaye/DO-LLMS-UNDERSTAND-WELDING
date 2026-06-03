@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import torch
+import torch.nn.functional as F
 from PIL import Image
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from torch.utils.data import Dataset
@@ -21,12 +22,7 @@ from transformers import (
 
 DEFAULT_TARGET_MODULES = [
     "q_proj",
-    "k_proj",
     "v_proj",
-    "o_proj",
-    "gate_proj",
-    "up_proj",
-    "down_proj",
 ]
 
 
@@ -75,6 +71,7 @@ class LlavaSFTCollator:
         images = []
         full_texts = []
         prompt_texts = []
+        sample_weights = []
 
         for ex in examples:
             with Image.open(ex["image_path"]) as image:
@@ -93,6 +90,7 @@ class LlavaSFTCollator:
                     add_generation_prompt=True,
                 )
             )
+            sample_weights.append(float(ex.get("sample_weight", 1.0)))
 
         model_inputs = self.processor(
             text=full_texts,
@@ -108,15 +106,49 @@ class LlavaSFTCollator:
         )
 
         labels = model_inputs["input_ids"].clone()
+        token_weights = torch.ones_like(labels, dtype=torch.float32)
+
         for i in range(labels.shape[0]):
             prompt_len = int(prompt_inputs["attention_mask"][i].sum().item())
             labels[i, :prompt_len] = -100
+            token_weights[i, :prompt_len] = 0.0
+            token_weights[i, prompt_len:] *= sample_weights[i]
+
         labels[model_inputs["attention_mask"] == 0] = -100
+        token_weights[model_inputs["attention_mask"] == 0] = 0.0
+
         model_inputs["labels"] = labels
+        model_inputs["token_weights"] = token_weights
         return model_inputs
 
 
+class WeightedLlavaTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
+        token_weights = inputs.pop("token_weights")
+        labels = inputs.pop("labels")
+
+        outputs = model(**inputs)
+        logits = outputs.logits
+
+        shift_logits = logits[:, :-1, :].contiguous()
+        shift_labels = labels[:, 1:].contiguous()
+        shift_weights = token_weights[:, 1:].contiguous()
+
+        loss_fct = torch.nn.CrossEntropyLoss(ignore_index=-100, reduction="none")
+        loss = loss_fct(
+            shift_logits.view(-1, shift_logits.size(-1)),
+            shift_labels.view(-1),
+        )
+        loss = loss * shift_weights.view(-1)
+
+        denom = shift_weights.view(-1).sum().clamp_min(1.0)
+        loss = loss.sum() / denom
+
+        return (loss, outputs) if return_outputs else loss
+
+
 def make_training_args(args):
+    use_bf16 = bool(torch.cuda.is_available() and torch.cuda.is_bf16_supported())
     kwargs = {
         "output_dir": args.output_dir,
         "num_train_epochs": args.epochs,
@@ -124,14 +156,17 @@ def make_training_args(args):
         "per_device_eval_batch_size": 1,
         "gradient_accumulation_steps": args.grad_accum,
         "learning_rate": args.lr,
+        "weight_decay": args.weight_decay,
         "warmup_ratio": args.warmup_ratio,
         "logging_steps": args.logging_steps,
         "save_steps": args.save_steps,
         "save_total_limit": 2,
         "optim": args.optim,
-        "fp16": True,
-        "bf16": False,
+        "fp16": not use_bf16,
+        "bf16": use_bf16,
         "gradient_checkpointing": args.gradient_checkpointing,
+        "max_grad_norm": args.max_grad_norm,
+        "lr_scheduler_type": args.lr_scheduler_type,
         "remove_unused_columns": False,
         "report_to": "none",
     }
@@ -151,20 +186,23 @@ def main() -> None:
     parser.add_argument("--train-jsonl", required=True)
     parser.add_argument("--eval-jsonl")
     parser.add_argument("--output-dir", required=True)
-    parser.add_argument("--epochs", type=float, default=3)
+    parser.add_argument("--epochs", type=float, default=1.0)
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--grad-accum", type=int, default=8)
-    parser.add_argument("--lr", type=float, default=2e-4)
-    parser.add_argument("--warmup-ratio", type=float, default=0.03)
+    parser.add_argument("--lr", type=float, default=2e-5)
+    parser.add_argument("--warmup-ratio", type=float, default=0.05)
+    parser.add_argument("--weight-decay", type=float, default=0.01)
+    parser.add_argument("--max-grad-norm", type=float, default=0.3)
     parser.add_argument("--max-length", type=int, default=1536)
-    parser.add_argument("--lora-r", type=int, default=16)
-    parser.add_argument("--lora-alpha", type=int, default=32)
-    parser.add_argument("--lora-dropout", type=float, default=0.05)
+    parser.add_argument("--lora-r", type=int, default=4)
+    parser.add_argument("--lora-alpha", type=int, default=8)
+    parser.add_argument("--lora-dropout", type=float, default=0.1)
     parser.add_argument("--target-modules", nargs="+", default=DEFAULT_TARGET_MODULES)
     parser.add_argument("--logging-steps", type=int, default=5)
     parser.add_argument("--save-steps", type=int, default=25)
     parser.add_argument("--eval-steps", type=int, default=25)
     parser.add_argument("--optim", default="paged_adamw_8bit")
+    parser.add_argument("--lr-scheduler-type", default="cosine")
     parser.add_argument("--limit-train", type=int)
     parser.add_argument("--limit-eval", type=int)
     parser.add_argument("--gradient-checkpointing", action="store_true")
@@ -205,6 +243,10 @@ def main() -> None:
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
+    trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    total = sum(p.numel() for p in model.parameters())
+    print(f"trainable ratio: {100 * trainable / total:.4f}%")
+
     train_dataset = WeldLlavaDataset(Path(args.train_jsonl), args.limit_train)
     eval_dataset = None
     if args.eval_jsonl and Path(args.eval_jsonl).exists():
@@ -212,7 +254,7 @@ def main() -> None:
         if len(eval_dataset) == 0:
             eval_dataset = None
 
-    trainer = Trainer(
+    trainer = WeightedLlavaTrainer(
         model=model,
         args=make_training_args(args),
         train_dataset=train_dataset,

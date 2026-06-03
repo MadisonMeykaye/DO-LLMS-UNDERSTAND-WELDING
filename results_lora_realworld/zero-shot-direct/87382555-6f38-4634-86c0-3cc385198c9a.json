@@ -3,30 +3,30 @@
         "guid": "87382555-6f38-4634-86c0-3cc385198c9a",
         "run_n": 0,
         "AcceptableRVMarine": false,
-        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeRVMarine": "Unacceptable",
         "AcceptableAeronautical": false,
-        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeAeronautical": "Unacceptable",
         "AcceptableFarming": false,
-        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+        "NarrativeFarming": "Unacceptable"
     },
     {
         "guid": "87382555-6f38-4634-86c0-3cc385198c9a",
         "run_n": 1,
         "AcceptableRVMarine": false,
-        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeRVMarine": "Unacceptable",
         "AcceptableAeronautical": false,
-        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeAeronautical": "Unacceptable",
         "AcceptableFarming": false,
-        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+        "NarrativeFarming": "Unacceptable"
     },
     {
         "guid": "87382555-6f38-4634-86c0-3cc385198c9a",
         "run_n": 2,
         "AcceptableRVMarine": false,
-        "NarrativeRVMarine": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeRVMarine": "Unacceptable",
         "AcceptableAeronautical": false,
-        "NarrativeAeronautical": "```json\n{\n  \"acceptable\": false\n}\n```",
+        "NarrativeAeronautical": "Unacceptable",
         "AcceptableFarming": false,
-        "NarrativeFarming": "```json\n{\n  \"acceptable\": false\n}\n```"
+        "NarrativeFarming": "Unacceptable"
     }
 ]
